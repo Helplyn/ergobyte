@@ -48,11 +48,17 @@
     <!-- MODALES -->
     <div class="container">
         <div class="row justify-content-center mt-4">
-            <div class="col-4">
+            <div class="col-6">
                 <!-- Modal 1 -->
                 <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content bg-success-transparent text-white">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modal1Label">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-md-7">
@@ -163,7 +169,7 @@
                 </button>
             </div>
 
-            <div class="col-4">
+            <div class="col-6">
                 <!-- Modal 2 -->
                 <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
@@ -279,10 +285,10 @@
                 </button>
             </div>
 
-            <div class="col-4">
+            <div class="col-6">
                 <!-- Modal 3 -->
                 <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
+                    <div class="modal-dialog modal-fullscreen"> <!-- Utilizando el ancho completo del modal en dispositivos móviles -->
                         <div class="modal-content bg-success-transparent text-white">
                             <div class="modal-body">
                                 <div class="row">
@@ -401,9 +407,9 @@
 
                 <!-- Botón como imagen para abrir Modal 3 -->
                 <button type="button" class="btn d-block mx-auto mt-4 mb-4 img-button" data-bs-toggle="modal"
-                    data-bs-target="#modal3">
-                    <img src="./trash/sillas.png" alt="Imagen 3" width="100%">
-                </button>
+                data-bs-target="#modal3">
+                <img src="./trash/sillas.png" alt="Imagen 3" width="100%">
+            </button>
             </div>
         </div>
     </div>

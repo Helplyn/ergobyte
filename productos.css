@@ -4,7 +4,7 @@
 
 .img-button:hover img {
     transform: scale(1.1);
-}
+  }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
     background-size: 70%;
@@ -21,6 +21,8 @@
     color: white !important; 
 }
 .btn-outline-custom {
+    display: block;
+    margin-bottom: 10px;
     border-color: #fff; 
     color: #fff; 
     transition: transform 0.3s ease;
@@ -30,4 +32,10 @@
 
 .btn-outline-custom:hover {
     transform: scale(1.4); 
+}
+
+@media (max-width: 768px) {
+    .img-button img {
+      transition: transform 0.3s ease-in-out;
+    }
 }
