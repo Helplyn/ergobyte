@@ -20,27 +20,26 @@ body {
   height: auto;
 }
 
-/* Estilos para el botón */
 .btn-custom {
-  border-radius: 80px; /* Hacer el botón más redondo */
-  padding: 15px 30px; /* Ajustar el padding para hacer el botón más grande */
-  font-size: 28px; /* Tamaño de fuente */
-  transition: all 0.3s ease; /* Animación suave al cambiar los estilos */
+  border-radius: 80px; 
+  padding: 15px 30px; 
+  font-size: 28px; 
+  transition: all 0.3s ease; 
 }
 
 .btn-custom:hover {
-  transform: scale(1.1); /* Hacer el botón un 10% más grande al pasar el mouse sobre él */
+  transform: scale(1.1); 
 }
 
-/* Media query para hacerlo responsive */
+
 @media (max-width: 768px) {
   .btn-custom {
-    padding: 12px 24px; /* Ajustar el padding para dispositivos más pequeños */
-    font-size: 16px; /* Tamaño de fuente para dispositivos más pequeños */
+    padding: 12px 24px; 
+    font-size: 16px; 
   }
 }
 
-/* Estilos para centrar el botón */
+
 .btn-container {
   text-align: center;
   margin-bottom: 20px;
@@ -66,14 +65,14 @@ Footer
 
 .footer-content {
   display: flex;
-  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+  flex-wrap: wrap; 
   justify-content: space-between;
 }
 
 .footer-section {
-  flex: 1 1 50%; /* Ocupar el 50% del ancho en pantallas pequeñas */
+  flex: 1 1 50%; 
   padding: 20px;
-  box-sizing: border-box; /* Considerar el padding dentro del ancho del elemento */
+  box-sizing: border-box; 
 }
 
 .footer-section h3 {
@@ -114,10 +113,9 @@ Footer
   color: white;
 }
 
-/* Media query para dispositivos móviles */
 @media screen and (max-width: 768px) {
   .footer-section {
-    flex: 1 1 100%; /* Ocupar todo el ancho en pantallas pequeñas */
-    padding: 10px; /* Reducir el padding */
+    flex: 1 1 100%; 
+    padding: 10px; 
   }
 }

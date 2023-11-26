@@ -8,29 +8,26 @@
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
     background-size: 70%;
-    background-color: rgba(255, 255, 255, 0.5); /* Color de los botones del carrusel */
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 20%;
 }
 
-/* Estilos para el modal */
 .bg-success-transparent {
-    background-color: rgba(40, 167, 69, 0.7) !important; /* Cambiar el color y nivel de transparencia */
-    border: none !important; /* Eliminar el borde si lo hubiera */
+    background-color: rgba(40, 167, 69, 0.7) !important; 
+    border: none !important; 
 }
 
 .text-white {
-    color: white !important; /* Cambiar el color del texto a blanco */
+    color: white !important; 
 }
 .btn-outline-custom {
-    border-color: #fff; /* Color del borde */
-    color: #fff; /* Color del texto */
-    transition: transform 0.3s ease; /* Transición suave */
-    border-radius: 20px; /* Bordes redondeados */
-    margin-left: 10px;
+    border-color: #fff; 
+    color: #fff; 
+    transition: transform 0.3s ease;
+    border-radius: 20px; 
     margin-right: 10px;
 }
 
-/* Efecto al pasar el mouse */
 .btn-outline-custom:hover {
-    transform: scale(1.4); /* Escala aumentada */
+    transform: scale(1.4); 
 }

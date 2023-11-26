@@ -1,4 +1,15 @@
 /* Estilos para pantallas grandes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .container-cards {
   margin: 0 auto;
   max-width: 1200px;
@@ -17,18 +28,50 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease-in-out; 
 }
 
-/* Media query para dispositivos móviles */
+.card:hover {
+  transform: scale(1.05); 
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1); 
+}
+
+.card-body {
+  background-color: #225F34;
+  color: white;
+  display: none; 
+  transition: display 0.3s ease-in-out; 
+}
+
+.card:hover .card-body {
+  display: block; 
+}
+
+
 @media (max-width: 768px) {
   .cards {
-    grid-template-columns: 1fr; /* Cambiar a una columna */
+    grid-template-columns: 1fr; 
     gap: 10px;
     margin-top: 1rem;
   }
 
   .card {
-    width: 100%; /* Ocupar el ancho completo */
-    margin-bottom: 1rem; /* Espacio entre tarjetas */
+    animation: fadeInUp 0.5s ease-in-out;
+    width: 100%; 
+    margin-bottom: 1rem; 
+    transform: none; 
+  }
+
+  .card:hover {
+    transform: none; 
   }
 }
