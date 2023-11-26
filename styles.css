@@ -1,0 +1,113 @@
+/************************
+
+Contenido
+
+************************/
+@font-face {
+  font-family: 'NombreFuente';
+  src: url('fonts/Agbalumo-Regular.woff') format('woff'),
+    url('fonts/Agbalumo-Regular.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  background-color: #f2ffc3;
+  font-family: 'NombreFuente', sans-serif;
+}
+
+.logo img {
+  max-width: 15%;
+  height: auto;
+}
+
+/* Estilos para el botón */
+.btn-custom {
+  border-radius: 80px; /* Hacer el botón más redondo */
+  padding: 15px 30px; /* Ajustar el padding para hacer el botón más grande */
+  font-size: 28px; /* Tamaño de fuente */
+  transition: all 0.3s ease; /* Animación suave al cambiar los estilos */
+}
+
+.btn-custom:hover {
+  transform: scale(1.1); /* Hacer el botón un 10% más grande al pasar el mouse sobre él */
+}
+
+/* Media query para hacerlo responsive */
+@media (max-width: 768px) {
+  .btn-custom {
+    padding: 12px 24px; /* Ajustar el padding para dispositivos más pequeños */
+    font-size: 16px; /* Tamaño de fuente para dispositivos más pequeños */
+  }
+}
+
+/* Estilos para centrar el botón */
+.btn-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/************************
+
+Footer
+
+************************/
+
+.footer {
+  background-color: #225F34;
+  color: white;
+  padding: 40px 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-section h3 {
+  color: white;
+
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.contact span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.socials a {
+  margin-right: 10px;
+  color: white;
+  font-size: 18px;
+}
+
+.footer-section.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section.links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section.links ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-section.links ul li a:hover {
+  color: white;
+}

@@ -1,0 +1,75 @@
+/* Tus estilos previos */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.container-cards {
+  margin: 0 5%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  margin-top: 2rem;
+}
+
+.card {
+  width: calc((100% - 2 * 5%) / 3);
+  margin-bottom: 5%;
+  overflow: hidden;
+  background-color: transparent; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.card-body {
+  text-align: center;
+  font-size: 1rem; 
+  padding: 2rem;
+  animation: fadeInUp 0.5s ease-in-out;
+  background-color: #225F34;
+  color: white;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  max-height: 100%; 
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    font-size: 0.9rem;
+    -webkit-line-clamp: 2;
+    max-height: 100%; 
+  }
+}
+
+.card:last-child {
+    border: 2px solid #cccccc00;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.cards .card {
+    /* Aplicar estilos similares a la última tarjeta */
+    border: 2px solid #cccccc00;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
