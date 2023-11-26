@@ -51,6 +51,7 @@ body {
 Footer
 
 ************************/
+/* Estilos generales del footer */
 
 .footer {
   background-color: #225F34;
@@ -65,17 +66,18 @@ Footer
 
 .footer-content {
   display: flex;
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
   justify-content: space-between;
 }
 
 .footer-section {
-  flex: 1;
+  flex: 1 1 50%; /* Ocupar el 50% del ancho en pantallas pequeñas */
   padding: 20px;
+  box-sizing: border-box; /* Considerar el padding dentro del ancho del elemento */
 }
 
 .footer-section h3 {
   color: white;
-
 }
 
 .footer-section p {
@@ -110,4 +112,12 @@ Footer
 
 .footer-section.links ul li a:hover {
   color: white;
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .footer-section {
+    flex: 1 1 100%; /* Ocupar todo el ancho en pantallas pequeñas */
+    padding: 10px; /* Reducir el padding */
+  }
 }
